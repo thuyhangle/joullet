@@ -1,1 +1,33 @@
-<h1>Joullet by Le Thuy hang</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+        <link href="assets/styles/styles.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js" integrity="sha384-CchuzHs077vGtfhGYl9Qtc7Vx64rXBXdIAZIPbItbNyWIRTdG0oYAqki3Ry13Yzu" crossorigin="anonymous"></script>
+        <script
+                  src="https://code.jquery.com/jquery-3.3.1.min.js"
+                  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                  crossorigin="anonymous"></script>
+        <script src="assets/scripts/app.js"></script>
+    </head>
+    <body>
+        <h1>Joullet by Le Thuy hang</h1>
+        <div id="testdiv" style="display:none">
+            <div>TEST</div>
+            <h1>Joullet by Le Thuy hang</h1>
+            <div id="hidediv">TEST2</div>
+        </div>
+        <a href="javascript:genPDF()">Download PDF</a>
+        
+        <div id="inputdiv">
+            <input type="text" id="name" value=""/ placeholder="Name"><br>
+            <input type="text" id="company" value="" placeholder="Company" /><br>
+            <input type="text" id="department" value="" placeholder="Department" /><br>
+            <input type="text" id="title" value="" placeholder="Job Title"/><br>
+            <input type="button" id="button" value="Submit"/>
+        </div>
+        <button type="button" onclick="saveForm()">Download form</button>
+    </body>
+</html>
