@@ -34,3 +34,7 @@ function saveForm() {
     });
          doc.save('test.pdf');
 }
+
+function printTemplate() {
+    window.print();
+}
